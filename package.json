@@ -1,6 +1,6 @@
 {
-  "name": "@your-username/nullab-design-system",
-  "version": "0.1.1",
+  "name": "nullab-design-system",
+  "version": "0.1.0",
   "description": "A comprehensive design system with React components and Tailwind CSS integration",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -17,7 +17,7 @@
       "types": "./dist/index.d.ts"
     },
     "./tailwind": "./tailwind.config.js",
-    "./styles": "./dist/index.css"
+    "./styles": "./dist/styles.css"
   },
   "scripts": {
     "build": "tsup && npm run build:css",

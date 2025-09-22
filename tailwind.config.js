@@ -2,8 +2,8 @@
 module.exports = {
   darkMode: 'class',
   content: [
-    // Don't include specific paths - let the consuming project handle this
-    // The consuming project will add this config and specify their own content paths
+    // For building the CSS file, include your source files
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
