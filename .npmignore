@@ -1,0 +1,32 @@
+# Development files
+src/
+public/
+.vite/
+node_modules/
+*.log
+
+# Development configs (keep tsup.config.ts for reference but not needed in package)
+tsup.config.ts
+vite.config.ts
+.eslintrc.js
+tsconfig.json
+
+# Development app files
+App.tsx
+index.tsx
+index.html
+
+# Environment and OS files
+.env*
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Testing and CI
+test/
+tests/
+__tests__/
+.github/

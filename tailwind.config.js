@@ -2,8 +2,8 @@
 module.exports = {
   darkMode: 'class',
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",  // Updated for Vite
+    // Don't include specific paths - let the consuming project handle this
+    // The consuming project will add this config and specify their own content paths
   ],
   theme: {
     extend: {
@@ -29,7 +29,6 @@ module.exports = {
         system: {
           primary: 'var(--system-primary)',
           primary_hover: 'var(--system-primary_hover)',
-
           danger: 'var(--system-danger)',
           danger_hover: 'var(--system-danger_hover)'
         },

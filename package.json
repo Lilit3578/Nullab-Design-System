@@ -1,29 +1,57 @@
 {
-  "name": "nullab-design-system",
-  "private": false,
+  "name": "@your-username/nullab-design-system",
   "version": "0.1.0",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "description": "A comprehensive design system with React components and Tailwind CSS integration",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist",
-    "tailwind.config.js"
+    "tailwind.config.js",
+    "README.md"
   ],
   "exports": {
-    ".": "./dist/index.js",
-    "./tailwind.config.js": "./tailwind.config.js"
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./tailwind": "./tailwind.config.js",
+    "./styles": "./dist/styles.css"
   },
   "scripts": {
+    "build": "tsup && npm run build:css",
+    "build:css": "tailwindcss -i ./src/styles/global.css -o ./dist/styles.css --minify",
     "dev": "vite",
-    "build": "tsup",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "lint": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "design-system",
+    "react",
+    "tailwindcss",
+    "components",
+    "ui"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/nullab-design-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/nullab-design-system/issues"
+  },
+  "homepage": "https://github.com/your-username/nullab-design-system#readme",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "tailwindcss": "^3.0.0"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.8",
-    "lucide-react": "^0.542.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "lucide-react": "^0.542.0"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
