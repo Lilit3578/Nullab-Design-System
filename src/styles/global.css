@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;1,400&display=swap') layer(base);
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap') layer(base);
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap') layer(base);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light Mode */
+  --ink-0: #FEFEFE;
+  --ink-100: rgba(20, 20, 20, 0.02);
+  --ink-200: rgba(20, 20, 20, 0.04);
+  --ink-300: rgba(20, 20, 20, 0.08);
+  --ink-400: rgba(20, 20, 20, 0.12);
+  --ink-500: rgba(20, 20, 20, 0.16);
+  --ink-600: rgba(20, 20, 20, 0.24);
+  --ink-700: rgba(20, 20, 20, 0.40);
+  --ink-800: rgba(20, 20, 20, 0.64);
+  --ink-900: rgba(20, 20, 20, 0.80);
+  --ink-1000: rgba(20, 20, 20, 1);
+
+  --system-primary: #0A68F5;
+  --system-primary_hover: #0B5EDA;
+
+  --system-danger: #B81616;
+  --system-danger_hover: #A41616;
+}
+
+.dark {
+  /* Dark Mode */
+  --ink-0: #141414;
+  --ink-100: rgba(254, 254, 254, 0.02);
+  --ink-200: rgba(254, 254, 254, 0.04);
+  --ink-300: rgba(254, 254, 254, 0.08);
+  --ink-400: rgba(254, 254, 254, 0.12);
+  --ink-500: rgba(254, 254, 254, 0.16);
+  --ink-600: rgba(254, 254, 254, 0.24);
+  --ink-700: rgba(254, 254, 254, 0.40);
+  --ink-800: rgba(254, 254, 254, 0.64);
+  --ink-900: rgba(254, 254, 254, 0.80);
+  --ink-1000: rgba(254, 254, 254, 1);
+
+  --system-primary: #0A68F5;
+  --system-primary_hover: #0B5EDA;
+  
+  --system-danger: #B81616;
+  --system-danger_hover: #A41616;
+}
