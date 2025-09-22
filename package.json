@@ -1,14 +1,18 @@
 {
   "name": "nullab-design-system",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
     "tailwind.config.js"
   ],
+  "exports": {
+    ".": "./dist/index.js",
+    "./tailwind.config.js": "./tailwind.config.js"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsup",
