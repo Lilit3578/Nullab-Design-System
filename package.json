@@ -17,7 +17,7 @@
       "types": "./dist/index.d.ts"
     },
     "./tailwind": "./tailwind.config.js",
-    "./styles": "./dist/styles.css"
+    "./styles": "./dist/index.css"
   },
   "scripts": {
     "build": "tsup && npm run build:css",
