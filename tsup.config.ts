@@ -5,14 +5,20 @@ export default defineConfig({
   format: ['cjs', 'esm'],
   dts: true,
   clean: true,
-  minify: true,
-  external: ['react', 'react-dom'],
-  // Don't bundle peer dependencies
+  minify: false, // Disable minification to help with debugging
+  external: ['react', 'react-dom', 'react/jsx-runtime'],
+  // Keep dependencies external to avoid bundling issues
   noExternal: ['@headlessui/react', 'lucide-react'],
+  splitting: false,
+  sourcemap: true,
   // For Next.js compatibility
   banner: {
     js: '"use client";',
   },
-  // Don't try to process CSS in tsup - we'll handle it separately
-  onSuccess: 'echo "JS build complete. Run npm run build:css to build CSS."'
+  // Ensure proper ESM/CJS handling
+  platform: 'browser',
+  target: 'es2020',
+  esbuildOptions(options) {
+    options.jsx = 'automatic';
+  }
 });
