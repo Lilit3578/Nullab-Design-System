@@ -6,7 +6,7 @@ export default defineConfig({
   dts: true,                        // Generate TypeScript declaration files
   clean: true,                      // Clean output folder before build
   minify: false,                    // No minification (good for debugging)
-  external: ['react', 'react-dom', 'react/jsx-runtime'], // Mark these as peer deps
+  external: ['react', 'react-dom', 'react/jsx-runtime', 'use-sync-external-store'], // Mark these as peer deps + externalize use-sync-external-store
   noExternal: ['@headlessui/react', 'lucide-react'],    // Bundle these deps
   splitting: false,                 // No code splitting (needed for cjs support)
   sourcemap: true,                 // Generate source maps
