@@ -1,8 +1,8 @@
+// nullab-design-system/tailwind.config.js
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const config = {
   darkMode: 'class',
   content: [
-    // For building the CSS file, include your source files
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
@@ -86,3 +86,5 @@ module.exports = {
     }
   ],
 }
+
+module.exports = config;
