@@ -1,6 +1,6 @@
 {
   "name": "nullab-design-system",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "A comprehensive design system with React components and Tailwind CSS integration",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -35,7 +35,7 @@
     "components",
     "ui"
   ],
-  "author": "Your Name <your.email@example.com>",
+  "author": "Nullab Ltd <lilit@nullab.io>",
   "license": "MIT",
   "repository": {
     "type": "git",
